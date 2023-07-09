@@ -5,7 +5,7 @@ type CardItem = {
 
 type Orderstatus = "open" | "close";
 
-export class ShoppingCard {
+export class ShoppingCardLegacy {
   private readonly items: CardItem[] = [];
   private status: Orderstatus = "open";
 
@@ -63,7 +63,7 @@ export class ShoppingCard {
   }
 }
 
-const shop = new ShoppingCard();
+const shop = new ShoppingCardLegacy();
 
 shop.AddItem = { name: "2", price: 50.5 };
 shop.AddItem = { name: "1", price: 100 };

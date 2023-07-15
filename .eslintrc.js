@@ -16,4 +16,7 @@ module.exports = {
     "*.scss",
     "*.js",
   ],
+  rules: {
+    "next-line": off
+  }
 };

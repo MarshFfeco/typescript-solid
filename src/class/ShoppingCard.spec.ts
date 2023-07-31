@@ -75,4 +75,12 @@ describe('shoppingCart', () => {
 
     expect(sut.Items.length).toBe(1)
   });
+
+  it('should calldiscount.calculat when totalwith discount is called', () => {
+    const { sut, dm } = createSUTWithProducts()
+    const discountMockSpy = jest.spyOn(dm, 'Calculate')
+    sut.TotalWidthDicount
+
+    expect(discountMockSpy).toBeCalledTimes(1)
+  });
 });
